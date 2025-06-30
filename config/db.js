@@ -7,10 +7,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',
+  host: process.env.DB_HOST || 'tramway.proxy.rlwy.net',
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '', // Utilise la variable d'environnement ou une chaîne vide
-  database: process.env.DB_NAME || 'vitafit_test',
+  password: process.env.DB_PASSWORD || 'YdMSLTubPLMDdQvUfVbqhrtXCmAHjhmc', // Utilise la variable d'environnement ou une chaîne vide
+  database: process.env.DB_NAME || 'railway',
 });
 
 db.connect((err) => {
