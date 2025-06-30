@@ -104,7 +104,7 @@ app.use((req, res) => {
 });
 
 const PORT = 3000;
-const HOST = 'localhost';
-app.listen(PORT, HOST,() => {
+const HOST = 'https://vitafit-backend.onrender.com';
+app.listen( HOST,() => {
   console.log(`🚀 Serveur démarré sur http://${HOST}:${PORT}`);
 });
