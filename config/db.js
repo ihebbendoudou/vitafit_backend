@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || 'tramway.proxy.rlwy.net',
+  host: process.env.DB_HOST || 'mysql.railway.internal',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || 'YdMSLTubPLMDdQvUfVbqhrtXCmAHjhmc', // Utilise la variable d'environnement ou une chaîne vide
   database: process.env.DB_NAME || 'railway',
